@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroServices", "MicroServices", "{B684C405-787F-42C1-881F-DCD440792A33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService", "ProductService\ProductService.csproj", "{D7FDF605-4350-4E9A-82DD-33FF99AC6ACA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService", "UserService\UserService.csproj", "{231E8432-73B6-4F39-8FF3-F46AD3D25D90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentService", "PaymentService\PaymentService.csproj", "{5BB2BAB3-2A6F-45CA-9325-7A34BDA818AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderService", "OrderService\OrderService.csproj", "{923EF390-C483-4993-BC6D-2C604BDA8C3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationService", "NotificationService\NotificationService.csproj", "{AC144DCE-6C2E-4C4E-99D2-E5A53E402B25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotAPIGateway", "OcelotAPIGateway\OcelotAPIGateway.csproj", "{648D4680-E51C-46E4-A1A2-7C0F6BAEE6BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7FDF605-4350-4E9A-82DD-33FF99AC6ACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7FDF605-4350-4E9A-82DD-33FF99AC6ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7FDF605-4350-4E9A-82DD-33FF99AC6ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7FDF605-4350-4E9A-82DD-33FF99AC6ACA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{231E8432-73B6-4F39-8FF3-F46AD3D25D90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{231E8432-73B6-4F39-8FF3-F46AD3D25D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{231E8432-73B6-4F39-8FF3-F46AD3D25D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{231E8432-73B6-4F39-8FF3-F46AD3D25D90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB2BAB3-2A6F-45CA-9325-7A34BDA818AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB2BAB3-2A6F-45CA-9325-7A34BDA818AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB2BAB3-2A6F-45CA-9325-7A34BDA818AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB2BAB3-2A6F-45CA-9325-7A34BDA818AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{923EF390-C483-4993-BC6D-2C604BDA8C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{923EF390-C483-4993-BC6D-2C604BDA8C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{923EF390-C483-4993-BC6D-2C604BDA8C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{923EF390-C483-4993-BC6D-2C604BDA8C3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC144DCE-6C2E-4C4E-99D2-E5A53E402B25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC144DCE-6C2E-4C4E-99D2-E5A53E402B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC144DCE-6C2E-4C4E-99D2-E5A53E402B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC144DCE-6C2E-4C4E-99D2-E5A53E402B25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{648D4680-E51C-46E4-A1A2-7C0F6BAEE6BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{648D4680-E51C-46E4-A1A2-7C0F6BAEE6BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{648D4680-E51C-46E4-A1A2-7C0F6BAEE6BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{648D4680-E51C-46E4-A1A2-7C0F6BAEE6BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D7FDF605-4350-4E9A-82DD-33FF99AC6ACA} = {B684C405-787F-42C1-881F-DCD440792A33}
+		{231E8432-73B6-4F39-8FF3-F46AD3D25D90} = {B684C405-787F-42C1-881F-DCD440792A33}
+		{5BB2BAB3-2A6F-45CA-9325-7A34BDA818AE} = {B684C405-787F-42C1-881F-DCD440792A33}
+		{923EF390-C483-4993-BC6D-2C604BDA8C3D} = {B684C405-787F-42C1-881F-DCD440792A33}
+		{AC144DCE-6C2E-4C4E-99D2-E5A53E402B25} = {B684C405-787F-42C1-881F-DCD440792A33}
+	EndGlobalSection
+EndGlobal
