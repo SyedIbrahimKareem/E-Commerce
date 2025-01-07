@@ -6,17 +6,17 @@ using ProductService.Business;
 namespace ProductService.Controllers
 {
     [Route("api/[controller]/[action]")]
-    public class ProductControllers : ControllerBase
+    public class ProductsControllers : ControllerBase
     {
         public readonly IProductServices _productServices;
-        public ProductControllers(IProductServices productServices)
+        public ProductsControllers(IProductServices productServices)
         {
             _productServices = productServices;
         }
         // GET: ProductControllercs
 
         [HttpGet]
-        public async Task<List<Product>>  GetProductList()
+        public async Task<IEnumerable<Product>>  GetProductList()
         {
             var productList= await _productServices.GetProductList();
             return productList;
@@ -30,10 +30,10 @@ namespace ProductService.Controllers
             return productList;
         }
         [HttpGet]
-        public async Task<List<Product>> GetProductListSearch(string name)
+        public async Task<IEnumerable<Product>> GetProductListSearch(string searchValue)
         {
             var productList =await _productServices.GetProductList();
-            productList.Where(x => x.productName.Contains(name)).ToList();
+            productList.Where(x => x.productName.Contains(searchValue)).ToList();
             return productList;
         }
     }

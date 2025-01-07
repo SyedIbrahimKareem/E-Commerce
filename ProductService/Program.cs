@@ -1,3 +1,4 @@
+using ProductService.Dapper;
 using ProductService.IProductService;
 using ProductService.ProductService;
 
@@ -10,7 +11,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<IProductServices, ProductServices>();
-
+builder.Services.AddSingleton<DapperContext>();
+builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
 var app = builder.Build();
 

@@ -4,7 +4,7 @@ namespace ProductService.IProductService
 {
     public interface IProductServices
     {
-        public Task<List<Product>> GetProductList();
+        public Task<IEnumerable<Product>> GetProductList();
         public Task<Product> GetProductByName(string productName);
     }
 }
